@@ -3,8 +3,18 @@
 import json
 import requests
 
+#Fazendo uma requisição 
 request_cotacao = requests.get('http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL')
-print(request_cotacao.json())
+cotacao = request_cotacao.json()
+
+# Utilizando as chaves dentro do json
+cotacao_bid_BTCBRL = cotacao['BTCBRL']['bid']
+cotacao_ask_BTCBRL = cotacao['BTCBRL']['ask']
+cotacao_name_BTCBRL = cotacao['BTCBRL']['name']
+nome = cotacao_name_BTCBRL.split('/')
+
+print(f'A  moeda { nome[1] } está com o preço de venda de  R$ { cotacao_ask_BTCBRL } e o preço de compra de R$ { cotacao_bid_BTCBRL }')
+
 
 # file = open('arquivojson.json', 'r')
 # mercado_livre = json.load(file)
