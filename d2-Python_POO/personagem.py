@@ -1,5 +1,7 @@
+from personagem_interface import PersonagemInterface
+
 # Para iniciar uma classe é necessário utilizar o método construtor __init__
-class Personagem:
+class Personagem(PersonagemInterface):
     def __init__(self, nome, raca, hp):
       # Onde self.nome é a propriedade e nome é o atributo
       self.nome = nome
@@ -14,7 +16,11 @@ class Personagem:
     # Método set
     def set_hp(self, dano):
       self.__hp -= dano
-      
+
+    def falar(self):
+      pass
+
+   
     # Podemos acessar via property
     @property
     def hp(self):
