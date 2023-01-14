@@ -1,4 +1,4 @@
-import pyoutogui
+import pyautogui
 # Para caracteres especiais 
 import pyperclip
 import time
