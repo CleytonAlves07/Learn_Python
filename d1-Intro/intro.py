@@ -209,7 +209,10 @@ print(f'Bônus: {bonus}')
 
 lista_produtos = ['celular', 'tablet', 'fone de ouvido', 'camera', 'microfone']
 lista_precos = [1000, 1200, 300, 500, 600]
-
+# Pegando os dois primeiros da lista produtos
+first_two = lista_produtos[:2]
+remove_last = lista_produtos[:-1]
+print(f'Pegando os dois primeiros da lista produtos: {first_two}')
 preco_reajustado=[preco * 1.1 for preco in lista_precos]
 
 print(preco_reajustado)
@@ -240,13 +243,38 @@ print('The alien color is ' + alien['color'])
 print(alien)
 
 favorite_num = {'eric': 17, 'ever': 4}
-# Forma de pegar os valores de um conjunto
+# Forma de pegar os items de um conjunto
 for name, number in favorite_num.items():
   print(name + ' loves ' + str(number))
 
-# Forma de pegar as chaves - keys
+# Forma de pegar a chave - key
 for name in favorite_num.keys():
   print(name + ' loves a number')
 
+# Forma de pegar o valor 
+for number in favorite_num.values():
+  print(str(number) + ' is a favorite')
 
+# While loops
+
+current = 1
+while current <= 5:
+  print(f'O valor corrente é {current}')
+  current += 1
+
+msg = ''
+while msg != 'quit':
+  msg = input('What is your message?')
+  if msg == 'quit':
+    print('Acertô miseravi!')
+  else:
+    print('Você tem que escrever quit para sair desse programa')
+
+# Estabelecendo um valor por default em uma função
+
+def make_pizza(topping='bacon'):
+  print(f'Have a {topping} pizza!')
+
+make_pizza()
+make_pizza('calabresa')
   
