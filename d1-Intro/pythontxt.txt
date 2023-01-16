@@ -1,0 +1,8 @@
+Olá, Meu nome é Cleyton! 
+
+Tenho 33 anos e já fui educador ambiental, garçom, instrutor de mergulho, administrador
+
+Hoje estou me desenvolvendo para ser um programador Full Stack
+
+Gosto muito de Python, mas sei programar também com JavaScript e TypeScript
+
