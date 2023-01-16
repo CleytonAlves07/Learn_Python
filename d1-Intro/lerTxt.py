@@ -10,8 +10,14 @@ with open(file, 'a') as file_object:
 
 # Para ler 
 with open(file) as file_object:
-  lines = file_object.readlines()
-
+  # Tratando erros
+  try:
+    lines = file_object.readlines()
+    str(lines)
+  except ValueError:
+    print('Please try to write only words')
+  else:
+    print('Your file will be read below')
 for line in lines:
   print(line)
 

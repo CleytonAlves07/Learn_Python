@@ -30,7 +30,22 @@ print(trybe)
 # utilizando um loop de repetição 
 
 ratings = [4, 8, 3, 7, 9, 10, 15]
+# Colocando elementos em uma posição específica 
+ratings.insert(4, 30)
+print(ratings)
+# Deletando em elemento em uma posição específica 
+del ratings[3]
+# remover um elemento específico 
+ratings.remove(9)
+most_recent_rating = ratings.pop(0)
+print(ratings)
+print(f'Most recent rating: {most_recent_rating}')
+
+# Ordem aleatória 
+ratings.sort()
+print(f'Elementos em ordem aleatória: {ratings}')
 new_ratings = []
+
 
 for rating in ratings:
   new_ratings.append(rating * 10)
@@ -51,8 +66,11 @@ def biggest_name(names):
       big_name = name
   return print(f'O maior nome da lista é: {big_name}')
 
+names = ["José", "Lucas", "Nádia", "Fernanda", "Borges", "Cairo", "Joana", "Francisgleydson", "Abel"]
+biggest_name(names)
 
-biggest_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana", "Francisgleydson"])
+# Ordem alfabética decrescente 
+print(sorted(names, reverse=True))
 
 # Para fazer um loop limitando até o número passado 
 
