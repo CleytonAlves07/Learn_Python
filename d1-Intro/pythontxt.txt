@@ -4,5 +4,4 @@ Tenho 33 anos e já fui educador ambiental, garçom, instrutor de mergulho, admi
 
 Hoje estou me desenvolvendo para ser um programador Full Stack
 
-Gosto muito de Python, mas sei programar também com JavaScript e TypeScript
-
+Gosto muito de Python, mas sei programar também com JavaScript e TypeScriptEspero aprender mais sobre automação, Machine Learn e IA
