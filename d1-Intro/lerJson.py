@@ -30,6 +30,6 @@ def main():
   except json.decoder.JSONDecodeError as exc:
     print('Arquivo inexistente')
 
-
+# Com esse if a abertura do arquivo só irá acontecer quando a função main for chamada
 if __name__ == '__main__':
   main()

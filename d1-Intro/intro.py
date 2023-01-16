@@ -227,3 +227,26 @@ lista_produtos = [
 # Podemos pegar os itens da tupla e nomea-los.
 for produto,preco in lista_produtos:
   print(f'O produto {produto} for reajustado de {preco} para R$ {preco * 1.1}')
+
+
+copy_of_list_produtos = lista_produtos[:]
+print(f'Copy: {copy_of_list_produtos}')
+
+alien = {'color': 'green', 'points': 5}
+# Add
+alien['position'] = 0
+
+print('The alien color is ' + alien['color'])
+print(alien)
+
+favorite_num = {'eric': 17, 'ever': 4}
+# Forma de pegar os valores de um conjunto
+for name, number in favorite_num.items():
+  print(name + ' loves ' + str(number))
+
+# Forma de pegar as chaves - keys
+for name in favorite_num.keys():
+  print(name + ' loves a number')
+
+
+  
