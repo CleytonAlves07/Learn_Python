@@ -69,6 +69,10 @@ def biggest_name(names):
 names = ["José", "Lucas", "Nádia", "Fernanda", "Borges", "Cairo", "Joana", "Francisgleydson", "Abel"]
 biggest_name(names)
 
+upper_case = [name.upper() for name in names]
+
+print(f'Os nomes em caixa alta: {upper_case}')
+
 # Ordem alfabética decrescente 
 print(sorted(names, reverse=True))
 
@@ -296,3 +300,40 @@ def make_pizza(topping='bacon'):
 make_pizza()
 make_pizza('calabresa')
 
+
+# List comprehensions - de 0 a 10
+squares = [x**2 for x in range(11)]
+print(f'Squares: {squares}')
+
+# Imprimindo um dicionário em uma lista
+new_client = {
+  'last': 'Alves',
+  'first': 'Cleyton',
+  'username': 'Alves2'
+}
+other_client = {
+  'last': 'Silva',
+  'first': 'Roberto',
+  'username': 'Robão'
+}
+clients = []
+clients.append(new_client)
+clients.append(other_client)
+
+for client_dic in clients:
+  for prop, attrib in client_dic.items():
+    print(prop + ':  ' + attrib)
+  print('\n')
+
+# lista dentro de um dicionário
+fav_languages = {
+'jen': ['python', 'ruby'],
+'sarah': ['c'],
+'edward': ['ruby', 'go'],
+'phil': ['python', 'haskell'],
+}
+
+for name, langs in fav_languages.items():
+  print(f'{name}: ')
+  for lang in langs:
+    print(f'- {lang}') 
