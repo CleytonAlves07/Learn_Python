@@ -21,11 +21,49 @@ trybe[3] = 'Ciência da Computação'
 
 print(trybe)
 
+fruits = ["laranja", "maçã", "uva", "abacaxi"]  # elementos são definidos separados por vírgula, envolvidos por colchetes
+
+fruits[0]  # o acesso é feito por índices iniciados em 0
+
+fruits[-1]  # o acesso também pode ser negativo
+
+fruits.append("banana")  # adicionando uma nova fruta
+
+fruits.remove("abacaxi")  # removendo uma fruta
+
+fruits.extend(["pera", "melão", "kiwi"])  # acrescenta uma lista de frutas a lista original
+
+fruits.index("maçã")  # retorna o índice onde a fruta está localizada, neste caso, 1
+
+fruits.sort()  # ordena a lista de frutas
+# Enumerando 
+# enumerate_fruits = enumerate(fruits)
+
+# print(enumerate_fruits)
 # Um conjunto ou set(objeto) pode ser criado:
   # teste = set()
   # um conjunto não repete dados, mesmo que você inclua várias vezes, diferente da lista.
   # Um set não se importa com a ordem 
 
+# permissions = {"member", "group"}  # elementos separados por vírgula, envolvidos por chaves
+
+# permissions.add("root")  # adiciona um novo elemento ao conjunto
+
+# permissions.add("member")  # como o elemento já existe, nenhum novo item é adicionado ao conjunto
+
+# permissions.union({"user"})  # retorna um conjunto resultado da união
+
+# permissions.intersection({"user", "member"})  # retorna um conjunto resultante da intersecção dos conjuntos
+
+# permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
+
+# permissions = frozenset(["member", "group"])  # assim como o set, qualquer estrutura iterável pode ser utilizada para criar um frozenset
+
+# permissions.union({"user"})  # novos conjuntos imutáveis podem ser criados à partir do original, mas o mesmo não pode ser modificado
+
+# permissions.intersection({"user", "member"})  # retorna um conjunto resultante da intersecção dos conjuntos
+
+# permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
 
 # utilizando um loop de repetição 
 
@@ -336,4 +374,5 @@ fav_languages = {
 for name, langs in fav_languages.items():
   print(f'{name}: ')
   for lang in langs:
-    print(f'- {lang}') 
+    print(f'- {lang}')
+

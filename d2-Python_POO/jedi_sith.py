@@ -7,7 +7,7 @@ class Jedi(Personagem):
   def __init__(self, nome, raca, hp):
     super().__init__(nome, raca, hp)
     # A classe Sabre está vindo por composição
-    self.sabre = Sabre('verde', 200)
+    self.sabre = Sabre('verde', 300)
 
   def defesa(self):
     defesa = choice([True, False])

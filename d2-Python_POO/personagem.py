@@ -7,7 +7,7 @@ class Personagem(PersonagemInterface):
       self.nome = nome
       self.raca = raca
       # Se eu colocar self._hp apenas estou informando que é protegido, mas continua sendo acessível
-      # self.__hp torna a propriedade privada e apenas acessível por gets e sets
+      # self.__hp torna a propriedade privada e apenas acessível por gets , sets ou property
       self.__hp = hp
 
     # Podemos acessar pelo método get

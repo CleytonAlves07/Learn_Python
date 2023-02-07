@@ -28,7 +28,7 @@ print(f'O life do personagem { personagem_Frodo.nome } agora é de { personagem_
 
 
 personagem_Obi = Jedi('Obi Wan', 'Humano', 2000)
-personagem_Darth = Sith('Darth Maul', 'Dathomirian', 1800)
+personagem_Darth = Sith('Darth Maul', 'Dathomirian', 2000)
 
 print('---------------------------')
 print('Batalha')
@@ -38,11 +38,11 @@ while personagem_Darth.get_hp() > 0:
   print(f"{ personagem_Darth.nome } (HP { personagem_Darth.get_hp() }) ataca { personagem_Obi.nome } (HP { personagem_Obi.get_hp() })")
   personagem_Darth.ataque(personagem_Obi)
   personagem_Obi.falar()
-  print('-----------------------------')
+  print('-----------------------------\n')
   if personagem_Obi.get_hp() > 0:
     print(f"{ personagem_Obi.nome } (HP { personagem_Obi.get_hp() }) contra-ataca { personagem_Darth.nome } (HP { personagem_Darth.get_hp() })")
     personagem_Obi.contra_ataca(personagem_Darth)
     personagem_Darth.falar()
-    print('-----------------------------')
+    print('-----------------------------\n')
   else:
     break
