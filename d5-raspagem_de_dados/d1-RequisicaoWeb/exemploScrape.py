@@ -1,4 +1,5 @@
 from parsel import Selector
+from pymongo import MongoClient
 import requests
 
 # response = requests.get("http://books.toscrape.com/")
@@ -20,6 +21,12 @@ import requests
 
 # Para pegar todas os livros utilizando utilizando o next
 
+# MongoDB
+
+client = MongoClient("mongodb://localhost:27017/")
+db = client.catalogue
+students = db.books
+
 
 URL_BASE = "http://books.toscrape.com/catalogue/"
 # Define a primeira página como próxima a ter seu conteúdo recuperado
@@ -34,7 +41,7 @@ while next_page_url:
         title = product.css("h3 a::attr(title)").get()
         price = product.css(
             ".product_price .price_color::text").re(r"£\d+\.\d{2}")
-        print(title, price)
+        # print(title, price)
 
 # Busca o detalhe de um produto
         detail_href = product.css("h3 a::attr(href)").get()
@@ -50,7 +57,12 @@ while next_page_url:
         suffix = "...more"
         if description.endswith(suffix):
             description = description[:-len(suffix)]
-        print(description)
+        # print(description)
+        db.books.insert_one(
+            {"title": title, "price": price, "description": description})
+
+        # db.books.insert_many(bookColletion)
 
     # Descobre qual é a próxima página
     next_page_url = selector.css(".next a::attr(href)").get()
+client.close()
