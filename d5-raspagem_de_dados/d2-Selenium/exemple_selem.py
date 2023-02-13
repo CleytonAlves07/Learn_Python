@@ -2,9 +2,15 @@ from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.firefox.options import Options
 
 firefox = webdriver.Firefox()
 
+options = Options()
+
+options.add_argument('--headless')
+
+firefox = webdriver.Firefox(options=options)
 # response = firefox.get("https://www.python.org/")
 
 # search_input = firefox.find_element("name", "q")
