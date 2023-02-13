@@ -1,0 +1,15 @@
+1676328385662	geckodriver	INFO	Listening on 127.0.0.1:38581
+1676328385666	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55693" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileho8cpr"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1676328386516	Marionette	INFO	Marionette enabled
+1676328386519	Marionette	INFO	Listening on port 43519
+Read port: 43519
+WebDriver BiDi listening on ws://127.0.0.1:55693
+1676328386634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileho8cpr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55693/devtools/browser/9dbc8d3f-f08b-4d5b-b058-dc6bb6f3a7dc
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
