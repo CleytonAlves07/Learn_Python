@@ -1,6 +1,7 @@
 from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 
 firefox = webdriver.Firefox()
 
@@ -17,7 +18,7 @@ firefox = webdriver.Firefox()
 
 def scrape(url):
     firefox.get(url)
-
+    books = []
     for book in firefox.find_elements(By.CLASS_NAME, "product_pod"):
         new_item = {}
         new_item["title"] = (
@@ -35,7 +36,30 @@ def scrape(url):
             .get_attribute('href')
         )
 
-        print(new_item)
+        books.append(new_item)
+    return books
 
 
-scrape("https://books.toscrape.com/")
+firefox.get("https://books.toscrape.com/")
+all_books = []
+url2request = "https://books.toscrape.com/"
+
+next_page_link = (
+    firefox.find_element(By.CLASS_NAME, "next")
+    .get_attribute("innerHTML")
+)
+
+while next_page_link:
+    all_books.extend(scrape(url2request))
+    try:
+        url2request = (
+            firefox.find_element(By.CLASS_NAME, "next")
+            .find_element(By.TAG_NAME, "a")
+            .get_attribute("href")
+        )
+    except NoSuchElementException:
+        print("exception handled")
+        break
+
+
+print(all_books)
