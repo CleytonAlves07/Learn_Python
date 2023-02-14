@@ -621,3 +621,93 @@ JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9
 1676331736401	Marionette	INFO	Stopped listening on port 46735
 1676331801255	Marionette	INFO	Stopped listening on port 45909
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1676332686055	geckodriver	INFO	Listening on 127.0.0.1:46505
+1676332686558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48415" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXUudpi"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1676332687276	Marionette	INFO	Marionette enabled
+1676332687279	Marionette	INFO	Listening on port 33245
+WebDriver BiDi listening on ws://127.0.0.1:48415
+Read port: 33245
+1676332687468	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXUudpi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:48415/devtools/browser/e10e8762-7b8c-404c-8539-d21297895c24
+1676332689080	geckodriver	INFO	Listening on 127.0.0.1:39107
+1676332689585	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "41615" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileP97ahG"
+*** You are running in headless mode.
+1676332689895	Marionette	INFO	Marionette enabled
+1676332689899	Marionette	INFO	Listening on port 37339
+WebDriver BiDi listening on ws://127.0.0.1:41615
+Read port: 37339
+1676332690111	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP97ahG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41615/devtools/browser/1ca5d735-d76d-4fed-9a22-6e7751ec5dac
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1676332880604	Marionette	INFO	Stopped listening on port 33245
+1676332905159	Marionette	INFO	Stopped listening on port 37339
+1676332905353	Marionette	INFO	Stopped listening on port 46143
+1676373579026	geckodriver	INFO	Listening on 127.0.0.1:55649
+1676373579530	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56397" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyji3Sk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1676373580289	Marionette	INFO	Marionette enabled
+1676373580293	Marionette	INFO	Listening on port 41055
+Read port: 41055
+WebDriver BiDi listening on ws://127.0.0.1:56397
+1676373580407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyji3Sk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56397/devtools/browser/361539c7-00dd-49a5-b493-b9862666eeb1
+1676373581476	geckodriver	INFO	Listening on 127.0.0.1:58849
+1676373581982	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "52319" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepvWFqu"
+*** You are running in headless mode.
+1676373582285	Marionette	INFO	Marionette enabled
+1676373582288	Marionette	INFO	Listening on port 34131
+WebDriver BiDi listening on ws://127.0.0.1:52319
+Read port: 34131
+1676373582487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepvWFqu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52319/devtools/browser/1c1c03a4-4ea5-4fda-89ec-08282fe0a6ce
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1676373734387	geckodriver	INFO	Listening on 127.0.0.1:55753
+1676373734390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezOq7Yg"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1676373734994	Marionette	INFO	Marionette enabled
+1676373734997	Marionette	INFO	Listening on port 44899
+WebDriver BiDi listening on ws://127.0.0.1:56081
+Read port: 44899
+1676373735189	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezOq7Yg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56081/devtools/browser/70277f7d-76c7-4c48-869c-037268712892
+1676373736090	geckodriver	INFO	Listening on 127.0.0.1:53115
+1676373736597	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50843" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezsybV1"
+*** You are running in headless mode.
+1676373736922	Marionette	INFO	Marionette enabled
+1676373736925	Marionette	INFO	Listening on port 40249
+Read port: 40249
+WebDriver BiDi listening on ws://127.0.0.1:50843
+1676373737036	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezsybV1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50843/devtools/browser/f5f65b8e-fe2c-483b-bcdf-ccfc5be261e0
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1676373917008	Marionette	INFO	Stopped listening on port 44899
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1676375021482	Marionette	INFO	Stopped listening on port 41055
