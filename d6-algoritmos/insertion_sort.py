@@ -15,4 +15,9 @@ def insertion_sort(numbers: list):
     return numbers
 
 
-print(insertion_sort([8, 9, 15, 28, 64, 37, 48, 99, 83]))
+numbers = [99, 9, 15, 55, 28, 64, 37, 48, 8, 83]
+# print(insertion_sort(numbers))
+
+# sorted() O(n log n)
+
+print(sorted(numbers))
